@@ -13,16 +13,12 @@ HumanB::~HumanB()
 }
 
 //Passing by value creates a copy, (encapsulation and immutability)
-void HumanB::setWeapon(Weapon &pb)
+void HumanB::setWeapon(Weapon &wp)
 {
-    this->weapon = &pb;
+    this->weapon = &wp;
 }
 
 void HumanB::attack(void)
 {
-    int i = 0;
-    std::cout << this->name << " attacks with his " << this->weapon->getType()[0];
-    while (this->weapon->getType()[++i])
-        std::cout << this->weapon->getType()[i];
-    std::cout << std::endl;
+    std::cout << this->name << " attacks with his " << this->weapon->getType() << std::endl;
 }

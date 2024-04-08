@@ -1,12 +1,12 @@
 
 
-#ifndef Karen_HPP
-#define Karen_HPP
+#ifndef Harl_HPP
+#define Harl_HPP
 
 #include <iostream>
 
-class Karen {
-    
+class Harl
+{    
 	private:
 		void	debug(void);
 		void	info(void);
@@ -14,8 +14,8 @@ class Karen {
 		void	error(void);
 
 	public:
-		Karen(void);
-		~Karen(void);
+		Harl(void);
+		~Harl(void);
 		void	complain(std::string level);
 };
 

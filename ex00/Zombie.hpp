@@ -5,12 +5,14 @@
 #include <string>
 #include <iostream>
 
-class Zombie {
-    std::string name;
+class Zombie
+{
+    private:
+        std::string name;
 
-public:
-    Zombie(std::string name);
-    ~Zombie();
+    public:
+        Zombie(std::string name);
+        ~Zombie();
 
     void announce(void);
 };

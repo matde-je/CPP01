@@ -13,13 +13,14 @@ Zombie::Zombie()
 }
 
 // Destructor
-Zombie::~Zombie() {
+Zombie::~Zombie()
+{
     std::cout << name << " killed" << "\n";
 }
 
 void    Zombie::announce(void)
 {
-    std::cout << this->name << " BraiiiiiiinnnzzzZ..." << "\n";
+    std::cout << this->name << ": BraiiiiiiinnnzzzZ..." << "\n";
 }
 
 void	Zombie::addName(std::string name)

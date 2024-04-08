@@ -4,9 +4,9 @@
 
 int main()
 {
-    Zombie  *zombie = zombieHorde(2, "lele");
+    Zombie  *zombie = zombieHorde(2, "zumbee");
     zombie->announce();
-    zombie->announce();
+    zombie[1].announce();
     delete [] zombie;
     return 0;
 }

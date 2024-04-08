@@ -5,13 +5,15 @@
 #include <string>
 #include <iostream>
 
-class Weapon {
-    std::string type;
+class Weapon
+{
+    private:
+        std::string type;
 
     public:
-    Weapon(std::string type);
-    Weapon();
-    ~Weapon();
+        Weapon(std::string type);
+        Weapon();
+        ~Weapon();
 
     void setType(std::string type);
     const std::string& getType();

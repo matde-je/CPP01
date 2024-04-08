@@ -2,7 +2,7 @@
 #include "HumanA.hpp"
 
 //the HumanA object is directly initialized with the reference to the Weapon 
-HumanA::HumanA(std::string name, Weapon &weapon): weapon(weapon)
+HumanA::HumanA(std::string name, Weapon &wp): weapon(wp)
 {
     this->name = name;
 }
@@ -14,9 +14,5 @@ HumanA::~HumanA()
 
 void    HumanA::attack(void)
 {
-    int i = 0;
-    std::cout << this->name << " attacks with his " << this->weapon.getType()[0];
-    while (this->weapon.getType()[++i])
-        std::cout << this->weapon.getType()[i];
-    std::cout << std::endl;
+    std::cout << this->name << " attacks with his " << this->weapon.getType() << std::endl;
 }

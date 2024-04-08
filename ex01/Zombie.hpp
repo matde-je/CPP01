@@ -6,13 +6,15 @@
 #include <iostream>
 #include <vector>
 
-class Zombie {
-    std::string name;
+class Zombie
+{
+    private:
+        std::string name;
 
-public:
-    Zombie(std::string name);
-    Zombie();
-    ~Zombie();
+    public:
+        Zombie(std::string name);
+        Zombie();
+        ~Zombie();
 
     void announce(void);
     void	addName(std::string name);

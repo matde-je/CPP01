@@ -1,17 +1,17 @@
 
 
-#ifndef Karen_HPP
-#define Karen_HPP
+#ifndef Harl_HPP
+#define Harl_HPP
 
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
 
-class Karen {
-
+class Harl
+{
 	public:
-		Karen(void);
-		~Karen(void);
+		Harl(void);
+		~Harl(void);
 };
 
 

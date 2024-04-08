@@ -1,15 +1,15 @@
 
 
 # Compiler
-CC = g++
+CC = c++
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CFLAGS = -g -Wall -Wextra -Werror -std=c++98
 
-SRCS = main.cpp Karen.cpp
+SRCS = main.cpp Harl.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
-name = karen
+name = Harl
 
 # Build name
 $(name): $(OBJS)
